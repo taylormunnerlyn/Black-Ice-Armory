@@ -1,0 +1,44 @@
+<div class="products_container">
+  <div class="products_top_section">
+    <!-- <div class="products_sub_header">
+      <img src=" "/>
+    </div> -->
+
+    <div class="products_main_header">
+      <div class="products_main_header_logo">
+        <img ui-sref="products" src="./products/img/logo.png" />
+      </div>
+      <div class="products_main_header_buttons">
+        <div ui-sref="products">RIFLES</div>
+        <div ui-sref="dealer_locator">Find A Dealer</div>
+        <div ui-sref="about">ABOUT</div>
+        <div ui-sref="contact">CONTACT US</div>
+      </div>
+      <a href="http://www.blackicearmory.com/" target="_blank"><div class="products_dealer_login">Dealer Login</div></a>
+    </div>
+    <div class="products_scroll_hint_container">
+      <div class="products_scroll_hint">
+        <p>Scroll down to see our rifles.</p>
+        <img src="./products/img/arrow1.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="products_middle_carousel">
+    <div ng-app="carouselApp">
+      <div ng-controller="CarouselCtrl" id="slides_control">
+        <div>
+          <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+              <img ng-src="{{slide.image}}">
+            </slide>
+          </carousel>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+  </div>
+
+
+</div>
